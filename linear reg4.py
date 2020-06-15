@@ -6,13 +6,13 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #Importing the dataset
-dataset = pd.read_csv('RealEstate_Data.csv')
+dataset = pd.read_csv('datasets_88705_204267_Real estate.csv')
 X = dataset.iloc[:,1:-1].values
 y = dataset.iloc[:,-1].values
 
 #Visualising the whole dataset values
 a = np.arange(len(y))
-plt.bar(a,y , color = 'darkgreen' )
+plt.bar(a,y , color = 'indigo' )
 plt.title('House prices per unit area determined by various factors' )
 plt.show()
 
