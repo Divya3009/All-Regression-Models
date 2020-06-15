@@ -39,7 +39,7 @@ print("Performance of Random Tree Regression model : ",r2_score(y_test, y_pred))
 a = np.arange(len(y_test))
 
 #Plotting the graph
-plt.plot(a,y_test , color = 'blue', label = 'original values')
+plt.plot(a,y_test , color = 'green', label = 'original values')
 plt.plot(a,y_pred , color = 'red', label = 'predicted values')
 plt.legend()
 plt.title('Random forest regression model \n Model performance(r squared value) : %3f '%r2_score(y_test, y_pred))
