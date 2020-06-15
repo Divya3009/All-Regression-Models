@@ -14,7 +14,7 @@ y = dataset.iloc[:,-1].values
 
 a = np.arange(len(y))
 plt.bar(a,y , color = 'indigo' )
-plt.title('House prices per unit area determined by various factors' )
+plt.title('House prices ' )
 plt.show()
 
 
@@ -40,7 +40,7 @@ print("Performance of Decision tree regression is : ",r2_score(y_pred,y_test))
 a =np.arange(len(y_test))
 
 #Plotting the graph
-plt.plot(a,y_test , color = 'blue', label = 'original values')
+plt.plot(a,y_test , color = 'green', label = 'original values')
 plt.plot(a,y_pred , color = 'red', label = 'predicted values')
 plt.legend()
 plt.title('Decision tree regression model \n Model performance(r squared value) : %f '%r2_score(y_pred,y_test))
